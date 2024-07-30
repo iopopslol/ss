@@ -1,10 +1,10 @@
-/* Basic dark theme with blue accents for Vencord */
+/* Dark theme with red accents for Vencord */
 
 :root {
     --background-color: #1e1e1e;
     --text-color: #e0e0e0;
-    --primary-blue: #1a73e8;
-    --secondary-blue: #003a70;
+    --primary-red: #e63946;
+    --secondary-red: #d62839;
     --border-color: #2a2a2a;
 }
 
@@ -14,41 +14,20 @@ body {
     color: var(--text-color) !important;
 }
 
-/* Text Color */
-span, p, h1, h2, h3, h4, h5, h6, .text {
-    color: var(--text-color) !important;
-}
-
 /* Buttons */
 button, .button {
-    background-color: var(--primary-blue) !important;
-    border: 1px solid var(--secondary-blue) !important;
+    background-color: var(--primary-red) !important;
+    border: 1px solid var(--secondary-red) !important;
     color: #ffffff !important;
 }
 
+/* Buttons on Hover */
 button:hover, .button:hover {
-    background-color: var(--secondary-blue) !important;
-    border: 1px solid var(--primary-blue) !important;
+    background-color: var(--secondary-red) !important;
+    border: 1px solid var(--primary-red) !important;
 }
 
-/* Borders */
-.border {
-    border-color: var(--border-color) !important;
-}
-
-/* Sidebars */
-.sidebar {
-    background-color: var(--background-color) !important;
-    border-right: 1px solid var(--border-color) !important;
-}
-
-/* Sidebar Header */
-.sidebar-header {
-    background-color: var(--primary-blue) !important;
-    color: #ffffff !important;
-}
-
-/* Chat Area */
+/* Chat Area Background */
 .chat-area {
     background-color: var(--background-color) !important;
 }
@@ -59,11 +38,23 @@ button:hover, .button:hover {
     color: var(--text-color) !important;
 }
 
+/* Sidebar Background */
+.sidebar {
+    background-color: var(--background-color) !important;
+    border-right: 1px solid var(--border-color) !important;
+}
+
+/* Sidebar Header */
+.sidebar-header {
+    background-color: var(--primary-red) !important;
+    color: #ffffff !important;
+}
+
 /* Links */
 a {
-    color: var(--primary-blue) !important;
+    color: var(--primary-red) !important;
 }
 
 a:hover {
-    color: var(--secondary-blue) !important;
+    color: var(--secondary-red) !important;
 }
